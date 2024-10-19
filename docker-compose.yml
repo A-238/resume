@@ -1,0 +1,9 @@
+services:
+  app:
+    image: node:20-alpine
+    container_name: resume
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+    tty: true
+    stdin_open: true
